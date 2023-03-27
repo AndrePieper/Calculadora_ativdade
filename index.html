@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculas</title>
+  </head>
+  <body>
+    <h1>É o calculas</h1>
+    <input type="number" id="Na">/*nmr 1*/
+    <input type="number" id="Nb">/*nmr 2*/
+    <br><br>
+    /* quando clica no botao */
+    <button onclick="adicao()">+</button>
+    <button onclick="subtracao()">-</button>
+    <button onclick="multiplicacao()">*</button>
+    <button onclick="divicao()">/</button>
+    <br><br>
+    <h1>Resultado: <div id="resultado"></div></h1>
+    <footer>   
+        <p>Site criado por André Pieper =/</p>
+    </footer>
+    <script>
+      function adicao() {
+        var numA = parseInt(document.getElementById("Na").value);/*pega o nmr 1 */
+        var numB = parseInt(document.getElementById("Nb").value);/*pega o nmr 2 */
+        var resultado = numA + numB;/*calculo*/
+        document.getElementById("resultado").innerHTML = resultado;/*mostra o resultado*/
+      }
+      
+      function subtracao() {
+        var numA = parseInt(document.getElementById("Na").value);
+        var numB = parseInt(document.getElementById("Nb").value);
+        var resultado = numA - numB;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+      
+      function multiplicacao() {
+        var numA = parseInt(document.getElementById("Na").value);
+        var numB = parseInt(document.getElementById("Nb").value);
+        var resultado = numA * numB;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+      
+      function dividicao() {
+        var numA = parseInt(document.getElementById("Na").value);
+        var numB = parseInt(document.getElementById("Nb").value);
+        var resultado = numA / numB;
+        document.getElementById("resultado").innerHTML = resultado;
+      }
+    </script>
+  </body>
+</html>
